@@ -8,25 +8,25 @@ while True:
     print(f"your choice was {user_choice} and the computer's choice was {computer_choice}")
 
     if user_choice == computer_choice:
-        print("It is a draw")
+        print("It is a tie!")
     
     elif user_choice == "rock":
         if computer_choice == "scissors":
-            print("you win!, computer lost")
+            print("Rock beats Scissors you win!, computer lost")
         else:
-            print("you lost, computer wins!")
+            print("Paper beats rock you lost, computer wins!")
     
     elif user_choice == "paper":
         if computer_choice == "rock":
-            print("you win!, computer lost")
+            print("Paper beats rock you win!, computer lost")
         else:
-            print("you lost, computer wins!")
+            print("Scissors beats Paper you lost, computer wins!")
     
     elif user_choice == "scissors":
         if computer_choice == "paper":
-            print("you win!, computer lost")
+            print("Scissors beats Paper you win!, computer lost")
         else:
-            print("you lost, computer wins!")
+            print("Rock beats Scissors you lost, computer wins!")
 
     restart = input("Restart(y/n):")
     if restart.lower() != "y":
